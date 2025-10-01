@@ -383,7 +383,8 @@ SAEM_Spatial<-function(cc,y,cens.type,trend,LI,LS,x,coords,kappa,M=20,perc=0.25,
   fitted=x%*%beta1
   obj.out <- list(beta1 = beta1, sigmae = sigmae, phi = phi, tau2 = tau2, Theta=Theta, loglik=loglik,
                   AIC=AICc, BIC=BICc, AICcorr=AICcorr,X=x, Psi=Psi,trend=trend,
-                  theta = teta1, yy = tyy,uy=tyi,cc=cc,type=type.S,kappa=kappa,coords=coords,timex=timediffe,iter=count,fitted=fitted)
+                  theta = teta1, yy = tyy,uy=tyi,cc=cc,type=type.S,kappa=kappa,coords=coords,timex=timediffe,iter=count,fitted=fitted,
+                  SAEM_y = SAEM_y)
 
   class(obj.out) <- "SAEMSpatialCens"
 

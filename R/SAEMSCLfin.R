@@ -228,7 +228,8 @@ mu = X*beta"
 
   obj.out <- list(beta = out$beta1, sigma2 = out$sigmae, phi = out$phi, nugget = out$tau2, Theta=out$Theta, loglik=out$loglik,
                   AIC=out$AIC, BIC=out$BIC, AICcorr=out$AICcorr,X=out$X, Psi=out$Psi,trend=out$trend,
-                  theta = out$theta, uyy = out$yy,uy=out$uy,cc=out$cc,type=out$type,kappa=out$kappa,coords=out$coords,iterations=out$iter,timex=out$timex,fitted=out$fitted)
+                  theta = out$theta, uyy = out$yy,uy=out$uy,cc=out$cc,type=out$type,kappa=out$kappa,coords=out$coords,iterations=out$iter,timex=out$timex,fitted=out$fitted,
+                  SAEM_y = out$SAEM_y)
 
   obj.out$trend1=trend1
   obj.out$M=M
